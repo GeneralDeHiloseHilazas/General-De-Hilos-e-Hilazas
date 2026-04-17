@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>General de Hilos e Hilazas</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff6f6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #b30000;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        header img {
+            width: 60px;
+            margin-right: 15px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid #b30000;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            color: #b30000;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            transition: 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #b30000;
+            margin: 10px;
+        }
+
+        .card p {
+            margin: 0 10px 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #b30000;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #800000;
+        }
+
+        footer {
+            background-color: #b30000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .frase {
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpeg" alt="Logo">
+    <h1>General de Hilos e Hilazas</h1>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#historia">Historia</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container">
+
+    <!-- SOBRE NOSOTROS -->
+    <div class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Somos una microempresa con más de 30 años de experiencia en el sector de la confección,
+            ofreciendo productos confiables y de alta calidad. Nos especializamos en hilos, hilazas,
+            repuestos para máquinas de coser e insumos para confección.
+        </p>
+        <p>
+            Nuestra trayectoria nos respalda, brindando confianza, atención cercana y compromiso
+            con cada uno de nuestros clientes.
+        </p>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="section" id="productos">
+        <h2>Productos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="hilos.jpeg">
+                <h3>Hilos</h3>
+                <p>Alta calidad y variedad de colores.</p>
+            </div>
+
+            <div class="card">
+                <img src="hilazas.jpeg">
+                <h3>Hilazas</h3>
+                <p>Resistencia y durabilidad para confección.</p>
+            </div>
+
+            <div class="card">
+                <img src="etiqueteadoras.jpeg">
+                <h3>Etiqueteadoras</h3>
+                <p>Terminación profesional de prendas.</p>
+            </div>
+
+            <div class="card">
+                <img src="repuestos de maquina.jpeg">
+                <h3>Repuestos de Máquinas</h3>
+                <p>Repuestos para máquinas industriales planas.</p>
+            </div>
+
+            <div class="card">
+                <img src="tijeras.jpeg">
+                <h3>Tijeras</h3>
+                <p>Corte profesional y duradero.</p>
+            </div>
+
+            <div class="card">
+                <img src="tallas.jpeg">
+                <h3>Tallas Tejidas</h3>
+                <p>Identificación y acabado de prendas.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- HISTORIA -->
+    <div class="section" id="historia">
+        <h2>Nuestra Historia</h2>
+        <p>
+            General de Hilos e Hilazas es una microempresa que ha crecido con el esfuerzo
+            y compromiso de ofrecer productos confiables en el área de confección.
+            Durante más de 30 años hemos acompañado a talleres, emprendedores y clientes,
+            construyendo una reputación basada en la calidad y la confianza.
+        </p>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="section" id="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Teléfono:</strong> 314 473 3302</p>
+        <p><strong>Dirección:</strong> Av 8 #10-72 Centro, Cúcuta - Local 9</p>
+
+        <p><strong>Horario de atención:</strong></p>
+        <p>Lunes a sábado: 8:00 AM - 6:30 PM (jornada continua)</p>
+        <a class="btn" href="https://wa.me/573144733302" target="_blank">
+            Escríbenos por WhatsApp
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 General de Hilos e Hilazas</p>
+    <p class="frase">"Más de 30 años siendo parte de tus proyectos de confección"</p>
+</footer>
+
+</body>
+</html>
