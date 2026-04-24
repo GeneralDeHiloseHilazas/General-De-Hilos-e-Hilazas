@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Venta de Hilos e Hilazas en Cúcuta | General de Hilos</title>
+
+<meta name="description" content="Venta de hilos, hilazas y repuestos de confección en Cúcuta. Envíos a toda Colombia. Más de 30 años de experiencia.">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #e60023;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4d4d;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('hilos.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 20px;
+    background: #25D366;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-left: 5px solid #e60023;
+    border-radius: 8px;
+}
+
+.section h2 {
+    color: #e60023;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #e60023;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* 🔥 BOTÓN COTIZAR */
+.buy {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    background: #3483fa;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buy:hover {
+    background: #2968c8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #e60023;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #c4001d;
+}
+
+footer {
+    background-color: #e60023;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 🔥 WHATSAPP PRO */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp svg {
+    margin-right: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.jpeg">
+<h1>General de Hilos e Hilazas</h1>
+</header>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero">
+<h1>Venta de Hilos e Hilazas en Cúcuta</h1>
+<p>Envíos a toda Colombia</p>
+<p>Más de 30 años surtindo talleres y emprendedores</p>
+
+<a href="https://wa.me/573144733302" target="_blank">
+Cotiza por WhatsApp
+</a>
+</div>
+
+<div class="container">
+
+<div class="section">
+<h2>Sobre Nosotros</h2>
+<p>
+Somos una microempresa con más de 30 años de experiencia en el sector textil.
+Ofrecemos hilos, hilazas, repuestos de máquinas, tijeras, tallas y etiqueteadoras
+con calidad garantizada.
+</p>
+<p>
+Atendemos en Cúcuta y realizamos envíos a toda Colombia.
+</p>
+</div>
+
+<div class="section" id="productos">
+<h2>Productos</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="hilos.jpeg">
+<h3>Hilos</h3>
+<p>Gran variedad de colores y alta resistencia en Cúcuta.</p>
+<a href="https://wa.me/573144733302" class="buy">Cotizar</a>
+</div>
+
+<div class="card">
+<img src="hilazas.jpeg">
+<h3>Hilazas</h3>
+<p>Perfectas para confección y tejidos.</p>
+<a href="https://wa.me/573144733302" class="buy">Cotizar</a>
+</div>
+
+<div class="card">
+<img src="etiqueteadoras.jpeg">
+<h3>Etiqueteadoras</h3>
+<p>Acabado profesional para prendas.</p>
+<a href="https://wa.me/573144733302" class="buy">Cotizar</a>
+</div>
+
+<div class="card">
+<img src="repuestos de maquina.jpeg">
+<h3>Repuestos</h3>
+<p>Para máquinas industriales.</p>
+<a href="https://wa.me/573144733302" class="buy">Cotizar</a>
+</div>
+
+<div class="card">
+<img src="tijeras.jpeg">
+<h3>Tijeras</h3>
+<p>Corte preciso y duradero.</p>
+<a href="https://wa.me/573144733302" class="buy">Cotizar</a>
+</div>
+
+<div class="card">
+<img src="tallas.jpeg">
+<h3>Tallas</h3>
+<p>Identificación profesional de prendas.</p>
+<a href="https://wa.me/573144733302" class="buy">Cotizar</a>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Opiniones de nuestros clientes ⭐</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Camilo</h3>
+<p>"Excelente calidad de atención y de productos 10/10👌🏻"</p>
+<p>⭐⭐⭐⭐⭐</p>
+</div>
+
+<div class="card">
+<h3>Santiago</h3>
+<p>"Gran servicio, el joven que atiende muy amable 🥰"</p>
+<p>⭐⭐⭐⭐⭐</p>
+</div>
+
+<div class="card">
+<h3>Martha Eilen Gómez Devia</h3>
+<p>"Atienden súper bien y tienen mucha variedad, lo recomiendo"</p>
+<p>⭐⭐⭐⭐⭐</p>
+</div>
+
+<div class="card">
+<h3>Santi</h3>
+<p>"Excelente servicio y buena calidad de producto 👍🏻"</p>
+<p>⭐⭐⭐⭐⭐</p>
+</div>
+
+</div>
+</div>
+
+<div class="section" id="contacto">
+<h2>Contacto</h2>
+
+<p><strong>📍 Dirección:</strong> Av 8 #10-72 Centro, Cúcuta - Local 9</p>
+<p><strong>📞 Teléfono:</strong> 314 473 3302</p>
+
+<p><strong>Horario:</strong></p>
+<p>Lunes a sábado: 8:00 AM - 6:30 PM</p>
+
+<a class="btn" href="https://wa.me/573144733302" target="_blank">
+Escríbenos por WhatsApp
+</a>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 General de Hilos e Hilazas</p>
+<p>"Más de 30 años siendo parte de tus proyectos"</p>
+</footer>
+
+<!-- 🔥 BOTÓN FINAL PRO -->
+<a href="https://wa.me/573144733302?text=Hola,%20quiero%20información%20sobre%20hilos%20y%20hilazas" class="whatsapp" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" fill="white">
+<path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.4 32l8.4-2.2c2.3 1.2 4.9 1.9 7.6 1.9 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z"/>
+</svg>
+<span>Escríbenos</span>
+</a>
+
+</body>
+</html>
